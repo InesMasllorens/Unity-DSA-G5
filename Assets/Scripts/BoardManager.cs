@@ -29,10 +29,12 @@ namespace Completed
         public int rows = 8;                                            //Number of rows in our game board.
         public Count wallCount = new Count (5, 9);                        //Lower and upper limit for our random number of walls per level.
 //        public Count foodCount = new Count (1, 5);                        //Lower and upper limit for our random number of food items per level.
+//        public Count utensiliosCount = new Count (1,5);                   ////Lower and upper limit for our random number of utensilios items per level.
         public GameObject exit;                                            //Prefab to spawn for exit.
         public GameObject[] floorTiles;                                    //Array of floor prefabs.
         public GameObject[] wallTiles;                                    //Array of wall prefabs.
 //        public GameObject[] foodTiles;                                    //Array of food prefabs.
+//        public GameObject[] utensiliosTiles;                               //Array of utensilios prefabs.
         public GameObject[] enemyTiles;                                    //Array of enemy prefabs.
         public GameObject[] outerWallHTiles;                                //Array of outer tile prefabs.
         public GameObject[] outerWallVTiles;                                //Array of outer tile prefabs.
@@ -146,7 +148,10 @@ namespace Completed
             LayoutObjectAtRandom (wallTiles, wallCount.minimum, wallCount.maximum);
 
             //Instantiate a random number of food tiles based on minimum and maximum, at randomized positions.
-//            LayoutObjectAtRandom (foodTiles, foodCount.minimum, foodCount.maximum);
+            //LayoutObjectAtRandom (foodTiles, foodCount.minimum, foodCount.maximum);
+
+            //Instantiate a random number of utensilios tiles based on minimum and maximum, at randomized positions.
+            //LayoutObjectAtRandom (utensiliosTiles, utensiliosCount.minimum, utensiliosCount.maximum);
 
             //Determine number of enemies based on current level number, based on a logarithmic progression
             int enemyCount = (int)Mathf.Log(level, 2f);

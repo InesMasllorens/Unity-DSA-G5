@@ -1,14 +1,17 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;        //Allows us to use SceneManager
+using UnityEngine.UI;
 
 //Player inherits from MovingObject, our base class for objects that can move, Enemy also inherits from this.
 public class Player : MovingObject
 {
     public float restartLevelDelay = 1f;        //Delay time in seconds to restart level.
     //public int pointsPerFood = 10;                //Number of points to add to player food points when picking up a food object.
+    //public int pointsSubtPerUtensilio = 2;       //Number of points to subtract to player food points when picking up a utensilio object.
     //public int pointsPerSoda = 20;                //Number of points to add to player food points when picking up a soda object.
     //public int wallDamage = 1;                    //How much damage a player does to a wall when chopping it.
+    public Text pointsText;
 
     private Animator animator;                    //Used to store a reference to the Player's animator component.
     private int food;                            //Used to store player food points total during level.
@@ -21,6 +24,8 @@ public class Player : MovingObject
         animator = GetComponent<Animator>();
         //Get the current food point total stored in GameManager.instance between levels.
         food = GameManager.instance.playerFoodPoints;
+
+        pointsText.text = "Points: " + food; 
         //Call the Start function of the MovingObject base class.
         base.Start();
     }
@@ -65,6 +70,7 @@ public class Player : MovingObject
     {
         //Every time player moves, subtract from food points total.
         food--;
+        pointsText.text = "Points: " + food;
         //Call the AttemptMove method of the base class, passing in the component T (in this case Wall) and x and y direction to move.
         base.AttemptMove<T>(xDir, yDir);
         //Hit allows us to reference the result of the Linecast done in Move.
@@ -110,12 +116,26 @@ public class Player : MovingObject
         }
 
         //Check if the tag of the trigger collided with is Food.
-        else if (other.tag == "Food")
+        //else if (other.tag == "Food")
+        else if (other.tag == "Cebolla" || other.tag == "CocaCola" || other.tag == "Hamburguesa" || other.tag == "Huevo" || other.tag == "Ketchup" || other.tag == "Lechuga" || other.tag == "Pan_abajo" || other.tag == "Pan_arriba" || other.tag == "Patata" || other.tag == "Queso" || other.tag == "Vino" || other.tag == "Zumo") //mirar si ha chocado con algun ingrediente
         {
             ////Add pointsPerFood to the players current food total.
             //food += pointsPerFood;
 
+            //pointsText.text = "+" pointsPerFood + " Points: " + food; 
+
             ////Disable the food object the player collided with.
+            //other.gameObject.SetActive(false);
+        }
+
+        else if (other.tag == "Cuchillo" || other.tag == "Freidora" || other.tag == "Plancha" || other.tag == "Plato") //mirar si ha chocado con algun utensilio
+        {
+            ////Subtract pointsSubtPerUtensilio to the players current food total.
+            //food -= pointsSubtPerUtensilio;
+
+            //pointsText.text = "+" pointsPerFood + " Points: " + food; 
+
+            ////Disable the utensilio object the player collided with.
             //other.gameObject.SetActive(false);
         }
     }
@@ -131,13 +151,15 @@ public class Player : MovingObject
 
     //LoseFood is called when an enemy attacks the player.
     //It takes a parameter loss which specifies how many points to lose.
-    public void LoseFood(int loss)
+    public void LoseFood(int loss) //serian loss points
     {
         //Set the trigger for the player animator to transition to the playerHit animation.
         //animator.SetTrigger("playerHit");
 
         //Subtract lost food points from the players total.
         food -= loss;
+
+        //pointsText.text = "-" loss + " Points: " + food; 
 
         //Check to see if game has ended.
         CheckIfGameOver();
