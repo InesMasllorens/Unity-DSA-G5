@@ -6,6 +6,22 @@ TagManager:
   tags:
   - Enemy
   - Exit
+  - Cebolla
+  - CocaCola
+  - Hamburguesa
+  - Huevo
+  - Ketchup
+  - Lechuga
+  - Pan_abajo
+  - Pan_arriba
+  - Patata
+  - Queso
+  - Vino
+  - Zumo
+  - Cuchillo
+  - Freidora
+  - Plancha
+  - Plato
   layers:
   - Default
   - TransparentFX
