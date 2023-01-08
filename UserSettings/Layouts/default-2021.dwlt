@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 67
+  controlID: 101
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 364
     height: 730.8
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 15}
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 290.4
     height: 432.8
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 86
+  controlID: 102
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 87
+  controlID: 103
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -370,13 +370,13 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  progressMessageClearTime: 9736.803641100001
+  progressMessageClearTime: 169.7341632
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
   currentTrackingStatusHasUpdate: 0
   currentStatusEntriesHasUpdate: 0
-  repositoryProgressHasUpdate: 0
+  repositoryProgressHasUpdate: 1
   appManagerProgressHasUpdate: 0
   changeTab: 3
   activeTab: 3
@@ -471,106 +471,11 @@ MonoBehaviour:
     treeScroll: {x: 0, y: 0}
     treeChanges:
       assets:
-        keys:
-        - 00000000000000001000000000000000
-        - 4bc97c6ee2818474b921f2702a0de039
-        - f3e49bc58cf2d6849afac3d24e5b1161
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites
-          label: Sprites
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites\floor.png
-          label: floor.png
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Sprites\floor.png
-            fullPath: C:\Users\Ines\Cook With Me\Assets\Sprites\floor.png
-            projectPath: Assets\Sprites\floor.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
+        keys: []
+        values: []
       folders:
-        keys:
-        - Assets
-        - Assets\Sprites
-        values:
-        - path: Assets
-          label: Assets
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Sprites
-          label: Sprites
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
+        keys: []
+        values: []
       checkedFileNodes:
         keys: []
         values: []
@@ -599,78 +504,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets
-        label: Assets
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Sprites
-        label: Sprites
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Sprites\floor.png
-        label: floor.png
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\floor.png
-          fullPath: C:\Users\Ines\Cook With Me\Assets\Sprites\floor.png
-          projectPath: Assets\Sprites\floor.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Sprites\floor.png.meta
-        label: floor.png.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Sprites\floor.png.meta
-          fullPath: C:\Users\Ines\Cook With Me\Assets\Sprites\floor.png.meta
-          projectPath: Assets\Sprites\floor.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
       selectedNode:
         path: 
         label: 
@@ -690,28 +523,16 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-    gitStatusEntries:
-    - path: Assets\Sprites\floor.png
-      fullPath: C:\Users\Ines\Cook With Me\Assets\Sprites\floor.png
-      projectPath: Assets\Sprites\floor.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Sprites\floor.png.meta
-      fullPath: C:\Users\Ines\Cook With Me\Assets\Sprites\floor.png.meta
-      projectPath: Assets\Sprites\floor.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    changedFilesText: 2 changed files
+    gitStatusEntries: []
+    changedFilesText: No changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2023-01-05T13:55:10.892+01:00
+      updatedTimeString: 2023-01-08T10:19:10.334+01:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2023-01-05T13:55:13.540+01:00
+      updatedTimeString: 2023-01-08T10:20:56.346+01:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 2023-01-05T12:53:46.931+01:00
+      updatedTimeString: 2023-01-08T10:19:12.190+01:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
@@ -914,9 +735,9 @@ MonoBehaviour:
   currentRemoteName: origin
   currentBranch: master
   currentRemoteUrl: https://github.com/InesMasllorens/Unity-DSA-G5.git
-  statusAhead: 0
+  statusAhead: 1
   statusBehind: 0
-  hasItemsToCommit: 1
+  hasItemsToCommit: 0
   isTrackingRemoteBranch: 1
   currentBranchContent:
     m_Text: master
@@ -927,13 +748,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2023-01-05T13:55:10.892+01:00
+    updatedTimeString: 2023-01-08T10:19:10.334+01:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2023-01-05T13:55:13.569+01:00
+    updatedTimeString: 2023-01-08T10:20:56.364+01:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2023-01-05T13:55:13.540+01:00
+    updatedTimeString: 2023-01-08T10:20:56.346+01:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -952,7 +773,7 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: 
   repositoryProgressValue: 1
-  repositoryProgressMessage: Pushed
+  repositoryProgressMessage: 
   appManagerProgressValue: 1
   appManagerProgressMessage: 
   primaryConnectionUsername: 
@@ -1012,7 +833,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 61.500854}
     m_SelectedIDs: c6640000
     m_LastClickedID: 25798
-    m_ExpandedIDs: 00000000c4640000a46c000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000001662000018620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1040,7 +861,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000001662000018620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1168,9 +989,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 80dcffff
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 9cedfffff4edffff20fbffff
+      m_ExpandedIDs: 2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
