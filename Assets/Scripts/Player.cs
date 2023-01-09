@@ -25,7 +25,7 @@ public class Player : MovingObject
         //Get the current food point total stored in GameManager.instance between levels.
         food = GameManager.instance.playerFoodPoints;
 
-        pointsText.text = "Points: " + food; 
+       // pointsText.text = "Points: " + food; 
         //Call the Start function of the MovingObject base class.
         base.Start();
     }
@@ -70,7 +70,7 @@ public class Player : MovingObject
     {
         //Every time player moves, subtract from food points total.
         food--;
-        pointsText.text = "Points: " + food;
+  //      pointsText.text = "Points: " + food;
         //Call the AttemptMove method of the base class, passing in the component T (in this case Wall) and x and y direction to move.
         base.AttemptMove<T>(xDir, yDir);
         //Hit allows us to reference the result of the Linecast done in Move.
